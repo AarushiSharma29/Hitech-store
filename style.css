@@ -1,0 +1,254 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #dad1d1; 
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 99%;
+  z-index: 100;
+  background-color: #131921; 
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #dfb912; 
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 24px;
+  padding: 5px;
+  width: 60%;
+  max-width: 400px;
+}
+
+.search-bar input {
+  border: none;
+  padding: 8px;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.search-bar button {
+  background: #FF9900;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+}
+
+.nav-icons a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #232F3E; 
+  padding: 10px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hero {
+  background: url('whatsapp.jpg') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero-text .btn {
+  display: inline-block;
+  background: #FF9900;
+  color: white;
+  padding: 12px 25px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.category {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.laptop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.laptop-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease-in-out;
+}
+
+.laptop-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.laptop-card h3 {
+  font-size: 16px;
+  color: #232F3E;
+  margin: 10px 0;
+}
+
+.laptop-card p {
+  color: #b12704; 
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.laptop-card:hover {
+  transform: translateY(-5px); 
+}
+
+.laptop-card .btn {
+  display: inline-block;
+  background: #054599;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.laptop-card .btn:hover {
+  background: #FF7700; 
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #232F3E;
+  color: white;
+  font-size: 14px;
+}
+
+footer a {
+  color: #FF9900;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .search-bar {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .nav-icons {
+    margin-top: 10px;
+  }
+
+  .hero {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text .btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .laptop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .laptop-card img {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  footer a {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
